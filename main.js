@@ -1,9 +1,7 @@
-import { writeToFile, testUrl } from './lib/functions';
-import { urls, addUrlToArray } from './lib/url';
+import { testUrl } from './lib/functions';
+import { urls } from './lib/url';
 
 async function run() {
-  await addUrlToArray();
-
   urls.forEach(async url => {
     try {
       console.log('Testing ' + url);
